@@ -1,0 +1,10 @@
+﻿<button type="button" @onclick="OnClick"
+    class="px-8 py-3 font-semibold border rounded dark:border-gray-800 dark:text-gray-800 hover:bg-sky-700">@Text</button>
+
+@code {
+    [Parameter]
+    public string Text { get; set; } = "Empty";
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}
